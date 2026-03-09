@@ -21,7 +21,7 @@ RUN apt update && \
     xz-utils \
     zlib1g-dev
 
-ENV PREFIX="/opt/python"
+ENV PREFIX="/opt/python" PYTHONHASHSEED="0" SOURCE_DATE_EPOCH="315532800"
 COPY build-pythons.sh .
 RUN ./build-pythons.sh
 
