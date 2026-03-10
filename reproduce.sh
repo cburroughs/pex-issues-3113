@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-set -euo pipefail
+set -euox pipefail
 
 PREFIX="${PREFIX:-/opt/python}"
 PEX_ROOT="/tmp/pex-repro"
